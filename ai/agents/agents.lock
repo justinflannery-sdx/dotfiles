@@ -5,31 +5,28 @@ version = 1
 source = "vercel-labs/skills"
 resolved_url = "https://github.com/vercel-labs/skills"
 resolved_path = "skills/find-skills"
-resolved_commit = "af860243b8c68053b3b5151e3732b9322933674d"
+resolved_commit = "50894c1d98bc45ca1ab127213e59d6525065b5e7"
 
-[skills.gh-stack]
-source = "github/gh-stack"
-resolved_url = "https://github.com/github/gh-stack"
-resolved_path = "skills/gh-stack"
-resolved_commit = "b1bfce9e51d0cd92fc23efd6ecb37ff68139e7db"
+[skills.mle-coding-review]
+source = "path:private"
 
-[skills.pr-gitmoji]
+[skills.pr-conventional]
 source = "juftin/skills"
 resolved_url = "https://github.com/juftin/skills"
-resolved_path = "skills/pr-gitmoji"
-resolved_commit = "167cdbd06063dbb1d808f555979e478b8ad2efa2"
+resolved_path = "skills/pr-conventional"
+resolved_commit = "f88579fa512ab49633d1a1a7a94edffeb2643912"
 
 [skills.python-style]
 source = "juftin/skills"
 resolved_url = "https://github.com/juftin/skills"
 resolved_path = "skills/python-style"
-resolved_commit = "167cdbd06063dbb1d808f555979e478b8ad2efa2"
+resolved_commit = "f88579fa512ab49633d1a1a7a94edffeb2643912"
 
 [skills.spec-driven-development]
 source = "juftin/skills"
 resolved_url = "https://github.com/juftin/skills"
 resolved_path = "skills/spec-driven-development"
-resolved_commit = "167cdbd06063dbb1d808f555979e478b8ad2efa2"
+resolved_commit = "f88579fa512ab49633d1a1a7a94edffeb2643912"
 
 [skills.speckit]
 source = "juftin/spec-kit"
@@ -101,13 +98,37 @@ resolved_commit = "896cc34c6026345185b6b6a93e1e990970427961"
 source = "juftin/skills"
 resolved_url = "https://github.com/juftin/skills"
 resolved_path = "skills/taskfiles"
-resolved_commit = "167cdbd06063dbb1d808f555979e478b8ad2efa2"
+resolved_commit = "f88579fa512ab49633d1a1a7a94edffeb2643912"
+
+[skills.unslop]
+source = "theclaymethod/unslop"
+resolved_url = "https://github.com/theclaymethod/unslop"
+resolved_path = "."
+resolved_commit = "0f4a07f5ca8bb400b4d4450b00d67c6e4a30b85a"
 
 [plugins.astral]
 source = "astral-sh/claude-code-plugins"
 resolved_url = "https://github.com/astral-sh/claude-code-plugins"
 resolved_path = "plugins/astral"
 resolved_commit = "855418fb9ebfada49a8345a5c3ada9db2cdc2419"
+
+[plugins.atlassian]
+source = "atlassian/atlassian-mcp-server"
+resolved_url = "https://github.com/atlassian/atlassian-mcp-server"
+resolved_path = ""
+resolved_commit = "352a02b05189e2a958a973867cc6eca365cb8fc3"
+
+[plugins.ced]
+source = "git:git@github.com:smarterdx/ced-claude-plugin-poc.git"
+resolved_url = "git@github.com:smarterdx/ced-claude-plugin-poc.git"
+resolved_path = ""
+resolved_commit = "e5916fb1eef027969156c946adde0c274f6a8b43"
+
+[plugins.pup]
+source = "DataDog/pup"
+resolved_url = "https://github.com/DataDog/pup"
+resolved_path = ""
+resolved_commit = "613f67cae25b27a0d39440395216ae0e82f5828b"
 
 [plugins.skill-creator]
 source = "anthropics/claude-plugins-official"

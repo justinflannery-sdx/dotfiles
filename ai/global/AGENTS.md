@@ -81,55 +81,36 @@ Use these skills when they apply:
     migrations with Spec Kit before implementing.
 -   **`taskfiles`**: run development workflows through `task`.
 -   **`python-style`**: `uv` environment management and Python code style.
--   **`pr-gitmoji`**: open and refine pull requests.
+-   **`pr-conventional`**: open and refine pull requests.
 
 ## Committing Code
 
--   When committing code, use the Gitmoji spec unless the project uses a different
-    convention: `<intention> [scope?][:?] <message>`
-
-    -   intention: The intention you want to express with the commit, using an emoji from `gitmoji`
-    -   scope: An optional string that adds contextual information for the scope of the change.
-    -   message: A brief explanation of the change.
+-   When committing code, use conventional commits unless the project uses a different
+    convention:
 
     ```
-    <intention> [scope?][:?] <message>
+    <type>[optional scope]: <description>
 
     [optional body]
 
     [optional footer(s)]
     ```
 
-    -   Examples:
+    -   Example:
 
-        -   ```
-            ⚡️ Lazyload home screen images
+        ```
+        feat(perf): increase parallel computations
 
-            Optimize performance by loading images only when they are
-            about to enter the viewport.
-            ```
+        Use asynchronous thread workers to get more work done concurrently.
+        ```
 
-        -   ```
-            🎉️ package-name
+    -   When you know it from the branch name, history, context, use the Jira ticket number:
 
-            First commit of the project! This commit sets up the
-            initial project structure and skaffolding.
-            ```
+        ```
+        feat(CED-123): increase parallel computations
 
-        -   ```
-            💥️ Remove support for User Signup via Email
-
-            This is a breaking change. Users will need
-            to sign up using OAuth providers.
-            ```
-
-        -   ✨ Add new feature to user profile page
-        -   🐛 Fix `onClick` event handler
-        -   🔖 Bump version to 1.2.0
-        -   ♻️ (components): Transform classes to hooks
-        -   📈 Add analytics to the dashboard
-        -   🌐 Support Japanese language
-        -   ♿️ (account): Improve modals a11y
+        Use asynchronous thread workers to get more work done concurrently.
+        ```
 
 -   Don't add yourself as a Co-Author unless explicitly requested to, or if the project
     documentation requires it.
